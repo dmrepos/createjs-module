@@ -715,13 +715,6 @@ declare namespace createjs {
         stageX: number;
         stageY: number;
         mouseMoveOutside: boolean;
-        ___loopingOver___: boolean;
-        depth :number;
-        isAttachedToCamera :boolean;
-        isAttachedToMask :boolean;
-        layerDepth :number;
-        layerIndex :number;
-        maskLayerName :number;
 
         // methods
         clone(): MouseEvent;
@@ -776,6 +769,13 @@ declare namespace createjs {
         timeline: Timeline;
         duration: number;
         static version: string;
+        ___loopingOver___: boolean;
+        depth :number;
+        isAttachedToCamera :boolean;
+        isAttachedToMask :boolean;
+        layerDepth :number;
+        layerIndex :number;
+        maskLayerName :number;
 
         // methods
         advance(time?: number): void;
