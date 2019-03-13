@@ -715,6 +715,13 @@ declare namespace createjs {
         stageX: number;
         stageY: number;
         mouseMoveOutside: boolean;
+        ___loopingOver___: boolean;
+        depth :number;
+        isAttachedToCamera :boolean;
+        isAttachedToMask :boolean;
+        layerDepth :number;
+        layerIndex :number;
+        maskLayerName :number;
 
         // methods
         clone(): MouseEvent;
