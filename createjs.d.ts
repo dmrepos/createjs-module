@@ -183,8 +183,8 @@ declare namespace createjs {
     }
 
     export class ButtonHelper<T extends DisplayObject> {
-        constructor(target: Sprite, outLabel?: string|number, overLabel?: string|number, downLabel?: string|number, play?: boolean, hitArea?: T, hitLabel?: string);
-        constructor(target: MovieClip, outLabel?: string|number, overLabel?: string|number, downLabel?: string|number, play?: boolean, hitArea?: T, hitLabel?: string);
+        constructor(target: Sprite, outLabel?: string|number, overLabel?: string|number, downLabel?: string|number, play?: boolean, hitArea?: T, hitLabel?: string|number);
+        constructor(target: MovieClip, outLabel?: string|number, overLabel?: string|number, downLabel?: string|number, play?: boolean, hitArea?: T, hitLabel?: string|number);
 
         // properties
         downLabel: string | number;
