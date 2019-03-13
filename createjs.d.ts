@@ -771,8 +771,8 @@ declare namespace createjs {
         static version: string;
         ___loopingOver___: boolean;
         depth :number;
-        isAttachedToCamera :boolean;
-        isAttachedToMask :boolean;
+        isAttachedToCamera :number;
+        isAttachedToMask :number;
         layerDepth :number;
         layerIndex :number;
         maskLayerName :number;
