@@ -851,6 +851,7 @@ declare namespace createjs {
 
         // properties
         graphics: Graphics;
+        _off: boolean;
 
         // methods
         clone(recursive?: boolean): Shape;
