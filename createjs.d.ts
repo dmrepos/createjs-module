@@ -182,9 +182,9 @@ declare namespace createjs {
         clone(): BlurFilter;
     }
 
-    export class ButtonHelper {
-        constructor(target: Sprite, outLabel?: string, overLabel?: string, downLabel?: string, play?: boolean, hitArea?: DisplayObject, hitLabel?: string);
-        constructor(target: MovieClip, outLabel?: string, overLabel?: string, downLabel?: string, play?: boolean, hitArea?: DisplayObject, hitLabel?: string);
+    export class ButtonHelper<T extends DisplayObject> {
+        constructor(target: Sprite, outLabel?: string|number, overLabel?: string, downLabel?: string, play?: boolean, hitArea?: T, hitLabel?: string);
+        constructor(target: MovieClip, outLabel?: string|number, overLabel?: string, downLabel?: string, play?: boolean, hitArea?: T, hitLabel?: string);
 
         // properties
         downLabel: string | number;
