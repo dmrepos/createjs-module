@@ -424,7 +424,7 @@ declare namespace createjs {
         beginLinearGradientStroke(colors: string[], ratios: number[], x0: number, y0: number, x1: number, y1: number): Graphics;
         beginRadialGradientFill(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
         beginRadialGradientStroke(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
-        beginStroke(color: string): Graphics;
+        beginStroke(color?: string): Graphics;
         bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): Graphics;
         clear(): Graphics;
         clone(): Graphics;
@@ -470,7 +470,7 @@ declare namespace createjs {
         ls(colors: string[], ratios: number[], x0: number, y0: number, x1: number, y1: number): Graphics;
         rf(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
         rs(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
-        s(color: string): Graphics;
+        s(color?: string): Graphics;
         bt(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): Graphics;
         c(): Graphics;
         cp(): Graphics;
