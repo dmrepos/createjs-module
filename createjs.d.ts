@@ -336,6 +336,7 @@ declare namespace createjs {
         getConcatenatedDisplayProps(props?: DisplayProps): DisplayProps;
         getConcatenatedMatrix(mtx?: Matrix2D): Matrix2D;
         getMatrix(matrix?: Matrix2D): Matrix2D;
+        _cloneProps(displayObject : DisplayObject);
         /**
          * @deprecated
          */
