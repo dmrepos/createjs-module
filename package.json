@@ -34,8 +34,5 @@
     "gulp-concat": "^2.6.0",
     "gulp-insert": "^0.5.0",
     "gulp-util": "^3.0.6"
-  },
-  "dependencies": {
-    "@types/createjs": "0.0.29"
   }
 }
