@@ -778,6 +778,7 @@ declare namespace createjs {
         layerIndex :number;
         maskLayerName :number;
         nominalBounds :Rectangle;
+        _off: boolean;
 
         // methods
         advance(time?: number): void;
