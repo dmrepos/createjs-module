@@ -420,7 +420,7 @@ declare namespace createjs {
         arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): Graphics;
         beginBitmapFill(image: Object, repetition?: string, matrix?: Matrix2D): Graphics;
         beginBitmapStroke(image: Object, repetition?: string): Graphics;
-        beginFill(color: string): Graphics;
+        beginFill(color?: string): Graphics;
         beginLinearGradientFill(colors: string[], ratios: number[], x0: number, y0: number, x1: number, y1: number): Graphics;
         beginLinearGradientStroke(colors: string[], ratios: number[], x0: number, y0: number, x1: number, y1: number): Graphics;
         beginRadialGradientFill(colors: string[], ratios: number[], x0: number, y0: number, r0: number, x1: number, y1: number, r1: number): Graphics;
