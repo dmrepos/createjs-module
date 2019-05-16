@@ -1005,6 +1005,7 @@ declare namespace createjs {
         mouseX: number;
         mouseY: number;
         nextStage: Stage;
+        _eventListeners : Map<string,object>;
         /**
          * @deprecated
          */
