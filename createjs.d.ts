@@ -284,6 +284,7 @@ declare namespace createjs {
          */
         getNumChildren(): number;
         getObjectsUnderPoint(x: number, y: number, mode: number): DisplayObject[];
+        _getObjectsUnderPoint(x?: number, y?: number, arr? : [], mouse?: boolean, activeListener?:boolean, currentDepth?: boolean) : DisplayObject
         getObjectUnderPoint(x: number, y: number, mode: number): DisplayObject;
         removeAllChildren(): void;
         removeChild(...child: DisplayObject[]): boolean;
@@ -1006,6 +1007,7 @@ declare namespace createjs {
         mouseY: number;
         nextStage: Stage;
         _eventListeners : Map<string,object>;
+        _primaryPointerID: object;
         /**
          * @deprecated
          */
@@ -1021,6 +1023,7 @@ declare namespace createjs {
         tick(props?: Object): void;
         toDataURL(backgroundColor: string, mimeType: string): string;
         update(...arg: any[]): void;
+        _updatePointerPosition(id:number, e:Event, pageX:number, pageY:number)
 
     }
 
